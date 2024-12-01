@@ -34,6 +34,13 @@ Syarah menghadapi tantangan dalam menentukan harga jual mobil bekas dengan cepat
 2. Mengintegrasikan model ke dalam situs web Syarah.com untuk estimasi harga secara real-time.
 3. Meningkatkan volume transaksi di Syarah.com setelah mengimplementasikan model.
 
+### Evaluation Metrics
+
+Model dievaluasi menggunakan metrik berikut:
+- **Mean Absolute Error (MAE)**
+- **Mean Absolute Percentage Error (MAPE)**
+- **R-Squared (R²)**
+
 ## Data Understanding
 
 ### Dataset
@@ -58,11 +65,11 @@ Dataset berisi 5624 catatan mobil bekas yang dikumpulkan dari Syarah.com. Setiap
 
 ### Langkah-langkah
 
-1. **Menangani Nilai Hilang**: Tidak ditemukan nilai hilang dalam dataset.
-2. **Menghapus Duplikat**: Baris duplikat diidentifikasi dan dihapus.
+1. **Menangani Missing Value**: Tidak ditemukan nilai hilang dalam dataset.
+2. **Menghapus Duplicate**: Baris duplikat diidentifikasi dan dihapus.
 3. **Menangani Outlier**: Outlier pada kolom `Price`, `Year`, dan `Mileage` diidentifikasi dan ditangani menggunakan teknik capping.
-4. **Rekayasa Fitur**: Agregasi kategori langka, encoding variabel kategorikal, dan skala fitur numerik.
-5. **Seleksi Fitur**: Menghapus fitur yang tidak relevan dan melakukan uji statistik untuk mengidentifikasi fitur yang signifikan.
+4. **Feature Engineering**: Agregasi kategori langka, encoding variabel kategorikal, dan skala fitur numerik.
+5. **Feature Selection**: Menghapus fitur yang tidak relevan dan melakukan uji statistik untuk mengidentifikasi fitur yang signifikan.
 
 ## Modelling
 
@@ -87,13 +94,6 @@ Model dengan kinerja terbaik adalah XGBoost Regressor, yang mencapai metrik beri
 - **MAE**: 9216.23
 - **MAPE**: 0.167
 - **R-Squared**: 0.874
-
-## Evaluation Metrics
-
-Model dievaluasi menggunakan metrik berikut:
-- **Mean Absolute Error (MAE)**
-- **Mean Absolute Percentage Error (MAPE)**
-- **R-Squared (R²)**
 
 ## Conclusion
 

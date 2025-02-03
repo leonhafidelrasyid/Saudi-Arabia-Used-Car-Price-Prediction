@@ -1,4 +1,4 @@
-# Capstone-Project-3 Prediksi Harga Mobil Bekas Syarah.com
+# Prediksi Harga Mobil Bekas Syarah.com
 Saudi Arabia Used car price prediction
 
 ## Introduction
